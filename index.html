@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Mohammed Huzaif - Software Engineer specializing in Java, Python, and modern web technologies. Explore projects, skills, experience timeline, and contact information.">
+  <meta name="keywords" content="Software Engineer, Portfolio, Mohammed Huzaif, Java, Python, Web Development, Frontend, Full Stack Developer">
+  <meta name="author" content="Mohammed Huzaif">
+  
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammed Huzaif | Software Engineer Portfolio">
+  <meta property="og:description" content="Software Engineer specializing in Java, Python, and frontend development. View portfolio, projects, and skills.">
+  <meta property="og:image" content="profile picture.jpeg">
+  
+  <title>Mohammed Huzaif | Software Engineer Portfolio</title>
+  
+  <!-- Google Fonts: Inter, Outfit, & Retro Pixel Fonts (Press Start 2P & Silkscreen) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip to Main Content Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Mobile Backdrop Overlay for Vertical Navbar -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- ================================================================= -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)                     -->
+  <!-- Fixed vertical navigation on desktop, slide-out drawer on mobile.  -->
+  <!-- Features retro pixel art styling, indicators, and full ARIA.      -->
+  <!-- ================================================================= -->
+  <aside id="sidebar-navigation" class="vertical-navbar" aria-label="Main Portfolio Navigation">
+    <div class="sidebar-inner">
+
+      <!-- Sidebar Top Header / Brand Badge -->
+      <div class="sidebar-brand-box">
+        <a href="#hero" class="sidebar-brand" aria-label="Mohammed Huzaif Portfolio Home">
+          <div class="pixel-avatar-thumb" aria-hidden="true">
+            <img src="profile picture.jpeg" alt="" class="avatar-thumb-img" width="40" height="40">
+          </div>
+          <div class="sidebar-brand-text">
+            <span class="sidebar-player-tag">● PLAYER 1</span>
+            <span class="sidebar-brand-name">&lt;HUZAIF<span class="pixel-blink-slash">/</span>&gt;</span>
+          </div>
+        </a>
+
+        <!-- Mobile Drawer Close Button -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" type="button" aria-label="Close navigation menu">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Main Navigation Links List -->
+      <nav class="sidebar-nav" aria-label="Portfolio Sections">
+        <ul class="sidebar-menu" role="menu">
+          
+          <!-- 1. Home -->
+          <li class="sidebar-item" role="none">
+            <a href="#hero" class="sidebar-link active" role="menuitem" data-section="hero">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">🕹️</span>
+              <span class="sidebar-label">Home</span>
+              <span class="sidebar-code" aria-hidden="true">[01]</span>
+            </a>
+          </li>
+
+          <!-- 2. About Me -->
+          <li class="sidebar-item" role="none">
+            <a href="#about" class="sidebar-link" role="menuitem" data-section="about">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">👤</span>
+              <span class="sidebar-label">About Me</span>
+              <span class="sidebar-code" aria-hidden="true">[02]</span>
+            </a>
+          </li>
+
+          <!-- 3. Video Introduction -->
+          <li class="sidebar-item" role="none">
+            <a href="#video-intro" class="sidebar-link" role="menuitem" data-section="video-intro">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">🎬</span>
+              <span class="sidebar-label">Video Intro</span>
+              <span class="sidebar-code" aria-hidden="true">[03]</span>
+            </a>
+          </li>
+
+          <!-- 4. Skills -->
+          <li class="sidebar-item" role="none">
+            <a href="#skills" class="sidebar-link" role="menuitem" data-section="skills">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">⚡</span>
+              <span class="sidebar-label">Skills</span>
+              <span class="sidebar-code" aria-hidden="true">[04]</span>
+            </a>
+          </li>
+
+          <!-- 5. Timeline -->
+          <li class="sidebar-item" role="none">
+            <a href="#timeline" class="sidebar-link" role="menuitem" data-section="timeline">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">⏳</span>
+              <span class="sidebar-label">Timeline</span>
+              <span class="sidebar-code" aria-hidden="true">[05]</span>
+            </a>
+          </li>
+
+          <!-- 6. Projects -->
+          <li class="sidebar-item" role="none">
+            <a href="#projects" class="sidebar-link" role="menuitem" data-section="projects">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">📦</span>
+              <span class="sidebar-label">Projects</span>
+              <span class="sidebar-code" aria-hidden="true">[06]</span>
+            </a>
+          </li>
+
+          <!-- 7. Testimonials -->
+          <li class="sidebar-item" role="none">
+            <a href="#testimonials" class="sidebar-link" role="menuitem" data-section="testimonials">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">💬</span>
+              <span class="sidebar-label">Testimonials</span>
+              <span class="sidebar-code" aria-hidden="true">[07]</span>
+            </a>
+          </li>
+
+          <!-- 8. Chat -->
+          <li class="sidebar-item" role="none">
+            <a href="#chat" class="sidebar-link" role="menuitem" data-section="chat">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">🤖</span>
+              <span class="sidebar-label">Chat</span>
+              <span class="sidebar-code" aria-hidden="true">[08]</span>
+            </a>
+          </li>
+
+          <!-- 9. Contact -->
+          <li class="sidebar-item" role="none">
+            <a href="#contact" class="sidebar-link" role="menuitem" data-section="contact">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="sidebar-icon" aria-hidden="true">✉️</span>
+              <span class="sidebar-label">Contact</span>
+              <span class="sidebar-code" aria-hidden="true">[09]</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Sidebar Bottom Console Status -->
+      <div class="sidebar-bottom-panel">
+        <div class="sidebar-system-chip">
+          <span class="system-led-dot" aria-hidden="true"></span>
+          <span class="system-text">LEVEL 99 // ONLINE</span>
+        </div>
+        <button id="sidebar-theme-toggle" class="sidebar-theme-btn" type="button" aria-label="Toggle theme mode" title="Quick toggle dark/light theme">
+          <span class="sidebar-btn-content">
+            <span class="sidebar-btn-icon" aria-hidden="true">🌓</span>
+            <span class="sidebar-btn-text">THEME TOGGLE</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Main Website Layout Shift Container -->
+  <div class="site-layout">
+
+    <!-- Top Header Bar (With Mobile Drawer Trigger & Night Mode Toggle) -->
+    <header id="site-header" class="site-header" role="banner">
+      <div class="header-container">
+        
+        <!-- Logo / Brand Identifier -->
+        <a href="#hero" class="brand-logo" aria-label="Mohammed Huzaif Portfolio Home">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Huzaif</span>
+          <span class="logo-slash">/</span>
+          <span class="logo-bracket">&gt;</span>
+        </a>
+
+        <!-- Header Controls: Night Mode Toggle & Mobile Menu Trigger -->
+        <div class="header-actions">
+          
+          <!-- [PLACEHOLDER: NIGHT MODE TOGGLE] -->
+          <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle color theme" aria-pressed="false" title="Switch between dark and light mode">
+            <span class="toggle-icon sun-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="toggle-icon moon-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="toggle-label sr-only">Toggle theme</span>
+          </button>
+          <!-- [END PLACEHOLDER: NIGHT MODE TOGGLE] -->
+
+          <!-- Mobile Vertical Navigation Menu Trigger -->
+          <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="sidebar-navigation" aria-label="Open vertical navigation menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+  <!-- ================================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                            -->
+  <!-- Wraps all primary content sections of the single-page portfolio.  -->
+  <!-- ================================================================= -->
+  <main id="main-content" class="main-content">
+
+    <!-- =============================================================== -->
+    <!-- 1. HERO SECTION                                                 -->
+    <!-- [PLACEHOLDER: HERO SECTION - PIXEL ART RETRO DESIGN]            -->
+    <!-- Pixel art styling with background image, retro HUD top bar,      -->
+    <!-- welcoming title & tagline, dialogue box, and night mode toggle. -->
+    <!-- =============================================================== -->
+    <section id="hero" class="hero-section pixel-hero" aria-labelledby="hero-title">
+      
+      <!-- Retro Scanline & CRT Pixel Grid Overlay -->
+      <div class="pixel-scanlines" aria-hidden="true"></div>
+
+      <div class="section-container hero-grid-wrapper">
+        
+        <!-- Retro Arcade HUD Header Bar -->
+        <div class="pixel-hud-bar">
+          <div class="hud-status">
+            <span class="hud-blinking-led" aria-hidden="true"></span>
+            <span class="hud-text">1-PLAYER MODE // INSERT COIN</span>
+          </div>
+
+          <!-- ========================================================= -->
+          <!-- [PLACEHOLDER: HERO NIGHT MODE TOGGLE]                     -->
+          <!-- Night mode toggle detecting user's default browser theme  -->
+          <!-- via CSS media query with manual override capability.      -->
+          <!-- ========================================================= -->
+          <div class="pixel-theme-wrapper" role="group" aria-label="Theme Selector">
+            <span class="pixel-hud-tag">THEME:</span>
+            <button id="hero-theme-toggle" class="pixel-hud-toggle" type="button" aria-label="Toggle night and day mode" title="Detects default browser theme via CSS media query. Click to switch.">
+              <span class="pixel-mode-day">☀️ DAY</span>
+              <span class="pixel-mode-slash">/</span>
+              <span class="pixel-mode-night">🌙 NIGHT</span>
+            </button>
+            <span id="system-theme-badge" class="pixel-system-badge" title="Detects browser default theme via CSS media query">MEDIA_QUERY: AUTO</span>
+          </div>
+          <!-- [END HERO NIGHT MODE TOGGLE] -->
+        </div>
+
+        <div class="hero-content-grid">
+          
+          <!-- Left Column: Welcome Title, Tagline, Dialogue Box, & Actions -->
+          <div class="hero-content pixel-content">
+            
+            <!-- Welcoming Greeting Badge -->
+            <div class="pixel-badge">
+              <span class="pixel-spark" aria-hidden="true">★</span>
+              <span class="pixel-badge-text">WELCOME, VISITOR! MISSION: PORTFOLIO</span>
+            </div>
+
+            <!-- Welcoming Title -->
+            <h1 id="hero-title" class="hero-title pixel-title">
+              MOHAMMED <span class="pixel-gradient-text">HUZAIFF</span>
+            </h1>
+            
+            <!-- Brief Tagline -->
+            <p class="hero-subtitle pixel-tagline">
+              &gt; SOFTWARE ENGINEER &amp; CODE CRAFTSMAN // LEVEL UP YOUR DIGITAL EXPERIENCE<span class="pixel-cursor" aria-hidden="true">_</span>
+            </p>
+
+            <!-- Retro RPG / Arcade Dialogue Box -->
+            <div class="pixel-dialog-box" role="region" aria-label="Engineer Welcome Message">
+              <div class="dialog-box-header">
+                <span class="dialog-title">SYSTEM_LOG // HUZAIF.EXE</span>
+                <span class="dialog-dots" aria-hidden="true">■ ■ ■</span>
+              </div>
+              <p class="dialog-message">
+                "Hello, traveler! Step into my engineering terminal. I specialize in building robust 
+                <strong>Java</strong> backends, intelligent <strong>Python</strong> systems, and modern 
+                <strong>Web Architectures</strong>. Ready to embark on a technical quest together?"
+              </p>
+            </div>
+
+            <!-- Pixel RPG Stats Bar (HP, MP, LVL) -->
+            <div class="pixel-stats-hud" aria-label="Character Attributes">
+              <div class="stat-row">
+                <span class="stat-name">HP [CLEAN CODE]</span>
+                <div class="stat-bar-frame">
+                  <div class="stat-bar-fill hp-fill" style="width: 100%;"></div>
+                </div>
+                <span class="stat-val">100/100</span>
+              </div>
+
+              <div class="stat-row">
+                <span class="stat-name">MP [PROBLEM SOLVING]</span>
+                <div class="stat-bar-frame">
+                  <div class="stat-bar-fill mp-fill" style="width: 100%;"></div>
+                </div>
+                <span class="stat-val">100/100</span>
+              </div>
+
+              <div class="stat-row">
+                <span class="stat-name">LVL [B.E. ENGINEER]</span>
+                <div class="stat-bar-frame">
+                  <div class="stat-bar-fill lvl-fill" style="width: 100%;"></div>
+                </div>
+                <span class="stat-val">MAX</span>
+              </div>
+            </div>
+
+            <!-- Retro Pixel Action Buttons -->
+            <div class="hero-actions pixel-actions">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                <span>▶ VIEW PROJECTS</span>
+              </a>
+              <a href="Huzaif_resume%20(1)%20(1).pdf" class="pixel-btn pixel-btn-secondary" target="_blank" rel="noopener noreferrer" download>
+                <span>📜 INVENTORY (CV)</span>
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-outline">
+                <span>✉ TRANSMIT</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Retro CRT Pixel Avatar Screen -->
+          <div class="hero-visual pixel-visual">
+            <div class="pixel-monitor-frame">
+              <div class="pixel-monitor-header">
+                <span class="monitor-dots" aria-hidden="true">● ● ●</span>
+                <span class="monitor-title">AVATAR_FEED // 60FPS</span>
+                <div class="pixel-hearts" aria-label="3 Health Points">
+                  <span class="pixel-heart">♥</span>
+                  <span class="pixel-heart">♥</span>
+                  <span class="pixel-heart">♥</span>
+                </div>
+              </div>
+
+              <div class="pixel-image-container">
+                <img src="profile picture.jpeg" alt="Mohammed Huzaif - Pixel Portrait" class="pixel-avatar" width="380" height="380" loading="eager">
+                <div class="crt-scanline-mesh" aria-hidden="true"></div>
+              </div>
+
+              <!-- Corner Pixel Accents -->
+              <div class="pixel-corner top-left" aria-hidden="true"></div>
+              <div class="pixel-corner top-right" aria-hidden="true"></div>
+              <div class="pixel-corner bottom-left" aria-hidden="true"></div>
+              <div class="pixel-corner bottom-right" aria-hidden="true"></div>
+
+              <!-- Floating Pixel Tech Chips -->
+              <div class="pixel-chip chip-left">
+                <span class="chip-symbol">☕</span>
+                <span class="chip-text">JAVA: 99</span>
+              </div>
+              <div class="pixel-chip chip-right">
+                <span class="chip-symbol">🐍</span>
+                <span class="chip-text">PYTHON: PRO</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- [END PLACEHOLDER: HERO SECTION] -->
+
+
+    <!-- =============================================================== -->
+    <!-- =============================================================== -->
+    <!-- 2. ABOUT SECTION                                                -->
+    <!-- [ABOUT SECTION: CLEAN & MINIMALISTIC DESIGN]                    -->
+    <!-- Features pixel-art avatar, concise bio, career highlights, and  -->
+    <!-- personal interests with high legibility and minimal aesthetics. -->
+    <!-- =============================================================== -->
+    <section id="about" class="about-section about-minimal" aria-labelledby="about-title">
+      <div class="section-container">
+        
+        <!-- Clean Section Header -->
+        <header class="section-header minimal-header">
+          <p class="section-eyebrow">Get To Know Me</p>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-subtitle-minimal">Software Engineer dedicated to structured code, robust architectures, and continuous growth.</p>
+          <div class="title-underline"></div>
+        </header>
+
+        <div class="about-minimal-grid">
+          
+          <!-- Left Column: Minimal Profile Image & Key Snapshot -->
+          <aside class="about-avatar-column" aria-label="Profile Snapshot">
+            <div class="about-avatar-card">
+              
+              <!-- Pixel Art Profile Image -->
+              <div class="avatar-frame-minimal">
+                <img src="pixel_avatar.png" alt="Mohammed Huzaif - Pixel Art Software Engineer Avatar" class="about-pixel-avatar" width="340" height="340" loading="lazy">
+                <span class="avatar-tag-pixel" aria-hidden="true">PIXEL AVATAR</span>
+              </div>
+
+              <!-- Quick Status Badge -->
+              <div class="avatar-status-badge">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                <span>Open to Engineering Roles</span>
+              </div>
+
+              <!-- Minimal Snapshot Specs -->
+              <ul class="snapshot-specs-list">
+                <li>
+                  <span class="spec-label">Role:</span>
+                  <span class="spec-value">Software Engineer</span>
+                </li>
+                <li>
+                  <span class="spec-label">Education:</span>
+                  <span class="spec-value">B.E. (CGPA: 7.0)</span>
+                </li>
+                <li>
+                  <span class="spec-label">Location:</span>
+                  <span class="spec-value">Karnataka, India</span>
+                </li>
+                <li>
+                  <span class="spec-label">Core Focus:</span>
+                  <span class="spec-value">Java • Python • Web</span>
+                </li>
+              </ul>
+
+              <!-- Quick CV Action -->
+              <a href="Huzaif_resume%20(1)%20(1).pdf" class="btn btn-sm btn-outline btn-block" target="_blank" rel="noopener noreferrer" download>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+            </div>
+          </aside>
+
+          <!-- Right Column: Biography, Career Highlights & Personal Interests -->
+          <article class="about-text-column">
+            
+            <!-- Short Biography -->
+            <div class="about-bio-block">
+              <h3 class="bio-lead-heading">Crafting Resilient Code with Engineering Discipline</h3>
+              <p class="bio-paragraph">
+                I am <strong>Mohammed Huzaif</strong>, a passionate software engineer and Bachelor of Engineering (B.E.) 
+                graduate from <em>Adichunchanagiri Institute of Technology</em>. I specialize in designing reliable 
+                software systems in <strong>Java</strong> and <strong>Python</strong>, coupled with clean, accessible 
+                frontend web applications.
+              </p>
+              <p class="bio-paragraph">
+                My approach to software engineering balances foundational computer science principles—data structures, 
+                object-oriented design, and algorithmic efficiency—with a sharp eye for minimalist, intuitive user experiences. 
+                Whether architecting database workflows or fine-tuning interactive web interfaces, I strive for clean, 
+                maintainable code that scales seamlessly.
+              </p>
+            </div>
+
+            <!-- Two-Column Cards: Career Highlights & Personal Interests -->
+            <div class="about-duo-cards">
+              
+              <!-- Card 1: Career Highlights -->
+              <div class="minimal-subcard highlight-subcard">
+                <div class="subcard-header">
+                  <div class="subcard-icon-box">🏆</div>
+                  <h4 class="subcard-title">Career Highlights</h4>
+                </div>
+                <ul class="subcard-bullets">
+                  <li>
+                    <strong>Engineering Graduate:</strong> Earned Bachelor of Engineering with a <strong>7.0 CGPA</strong>, building core foundations in algorithms, DBMS, and system architecture.
+                  </li>
+                  <li>
+                    <strong>Python Certified:</strong> Recipient of the <em>Python Code Camp Certificate</em>, demonstrating mastery in Python programming fundamentals and automation.
+                  </li>
+                  <li>
+                    <strong>Production-Oriented Project:</strong> Engineered the <em>Digital Inventory &amp; Sales Management System</em> in Java and Python to streamline real-time stock balances and reporting.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Card 2: Personal Interests -->
+              <div class="minimal-subcard interests-subcard">
+                <div class="subcard-header">
+                  <div class="subcard-icon-box">💡</div>
+                  <h4 class="subcard-title">Personal Interests</h4>
+                </div>
+                <ul class="subcard-bullets">
+                  <li>
+                    <strong>Algorithmic Problem Solving:</strong> Passionate about solving competitive programming challenges, dynamic programming problems, and recursion puzzles.
+                  </li>
+                  <li>
+                    <strong>Pixel Art &amp; Retro Computing:</strong> Enthusiast of 8-bit/16-bit game aesthetics, pixel shaders, CRT scanline styling, and creative interface experiments.
+                  </li>
+                  <li>
+                    <strong>Continuous Learning:</strong> Constantly exploring emerging developer tools, open-source repositories, and scalable software architecture paradigms.
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Minimalist Navigation Next Steps -->
+            <div class="about-action-links">
+              <a href="#skills" class="minimal-link-arrow">
+                <span>View Technical Skills</span>
+                <span class="arrow-symbol" aria-hidden="true">&rarr;</span>
+              </a>
+              <a href="#projects" class="minimal-link-arrow">
+                <span>Explore Projects</span>
+                <span class="arrow-symbol" aria-hidden="true">&rarr;</span>
+              </a>
+              <a href="#contact" class="minimal-link-arrow">
+                <span>Get In Touch</span>
+                <span class="arrow-symbol" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- [END ABOUT SECTION: CLEAN & MINIMALISTIC DESIGN] -->
+
+
+    <section id="video-intro" class="video-highlight-section" aria-labelledby="video-intro-title">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-eyebrow">Player Introduction // Press Play</p>
+          <h2 id="video-intro-title" class="section-title">Meet Huzaif</h2>
+          <div class="title-underline"></div>
+        </header>
+
+        <figure class="video-highlight-frame">
+          <div class="video-monitor-header">
+            <span>INTRO_FEED // 00:30</span>
+            <span class="video-live-indicator"><span aria-hidden="true">●</span> PLAYER 1</span>
+          </div>
+          <div class="video-frame-minimal">
+            <video id="intro-video" class="intro-video" controls preload="metadata" playsinline poster="profile picture.jpeg" aria-label="Video introduction by Mohammed Huzaif">
+              <source src="self intro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption class="video-caption-text">A quick introduction to my software engineering background, interests, and approach to building reliable software.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- =============================================================== -->
+    <!-- 3. SKILLS SECTION                                               -->
+    <!-- [SKILLS SECTION: RETRO PIXEL ART COMPETENCY ARSENAL]            -->
+    <!-- Displays programming languages, web technologies, CS concepts,  -->
+    <!-- and tools with 8-bit progress meters, level badges, & comments. -->
+    <!-- =============================================================== -->
+    <section id="skills" class="skills-section pixel-skills-section" aria-labelledby="skills-title">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <p class="section-eyebrow">Technical Arsenal // Player 1</p>
+          <h2 id="skills-title" class="section-title">Skills &amp; Expertise</h2>
+          <p class="skills-subtitle">Engineered competencies with 8-bit progress meters, mastery levels, and developer tooling.</p>
+          <div class="title-underline"></div>
+        </header>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skill Categories">
+          <button type="button" class="skill-filter-btn active" role="tab" aria-selected="true" data-filter="all">
+            <span class="tab-arrow" aria-hidden="true">▶</span>
+            <span>[ALL TECH]</span>
+          </button>
+          <button type="button" class="skill-filter-btn" role="tab" aria-selected="false" data-filter="languages">
+            <span class="tab-arrow" aria-hidden="true">▶</span>
+            <span>[LANGUAGES]</span>
+          </button>
+          <button type="button" class="skill-filter-btn" role="tab" aria-selected="false" data-filter="web">
+            <span class="tab-arrow" aria-hidden="true">▶</span>
+            <span>[WEB &amp; UI]</span>
+          </button>
+          <button type="button" class="skill-filter-btn" role="tab" aria-selected="false" data-filter="core">
+            <span class="tab-arrow" aria-hidden="true">▶</span>
+            <span>[CORE CS]</span>
+          </button>
+          <button type="button" class="skill-filter-btn" role="tab" aria-selected="false" data-filter="tools">
+            <span class="tab-arrow" aria-hidden="true">▶</span>
+            <span>[DEV TOOLS]</span>
+          </button>
+        </div>
+
+        <div class="skills-stations-grid">
+          
+          <!-- ========================================================= -->
+          <!-- 1. PROGRAMMING LANGUAGES STATION                          -->
+          <!-- SKILL CATEGORY: Core OOP & system backend languages       -->
+          <!-- ========================================================= -->
+          <article class="skill-station-card card" data-category="languages" aria-labelledby="skills-lang-title">
+            <header class="station-header">
+              <div class="station-icon" aria-hidden="true">⚡</div>
+              <div>
+                <span class="station-badge">MODULE 01</span>
+                <h3 id="skills-lang-title" class="station-title">Programming Languages</h3>
+              </div>
+            </header>
+            <p class="station-desc">Core languages used for backend architectures, systems programming, and algorithmic data pipelines.</p>
+
+            <div class="skills-meter-list">
+              
+              <!-- SKILL: JAVA - Primary OOP language for enterprise software and Inventory System -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">☕</span>
+                    <strong>Java (Core &amp; OOP)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 90 // 90%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 90%">
+                  <div class="pixel-meter-fill fill-java" style="width: 90%;"></div>
+                </div>
+                <!-- Sub-competencies for Java -->
+                <ul class="skill-subtags" aria-label="Java competencies">
+                  <li class="subtag">OOP Architecture</li>
+                  <li class="subtag">Collections Framework</li>
+                  <li class="subtag">File I/O</li>
+                  <li class="subtag">Inventory System</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: PYTHON - Certified competency for scripting, data structures, and automation -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🐍</span>
+                    <strong>Python 3 (Certified)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 88 // 88%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 88%">
+                  <div class="pixel-meter-fill fill-python" style="width: 88%;"></div>
+                </div>
+                <!-- Sub-competencies for Python -->
+                <ul class="skill-subtags" aria-label="Python competencies">
+                  <li class="subtag">Code Camp Certified</li>
+                  <li class="subtag">Data Structures</li>
+                  <li class="subtag">Script Automation</li>
+                  <li class="subtag">Data Parsing</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: C LANGUAGE - Low-level systems programming, memory management & pointer logic -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">💻</span>
+                    <strong>C Programming</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 82 // 82%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="C programming proficiency 82%">
+                  <div class="pixel-meter-fill fill-c" style="width: 82%;"></div>
+                </div>
+                <!-- Sub-competencies for C -->
+                <ul class="skill-subtags" aria-label="C competencies">
+                  <li class="subtag">Pointer Arithmetic</li>
+                  <li class="subtag">Memory Allocation</li>
+                  <li class="subtag">System Fundamentals</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- ========================================================= -->
+          <!-- 2. FRONTEND & MODERN WEB TECHNOLOGIES STATION             -->
+          <!-- SKILL CATEGORY: Semantic, accessible, and reactive UI     -->
+          <!-- ========================================================= -->
+          <article class="skill-station-card card" data-category="web" aria-labelledby="skills-web-title">
+            <header class="station-header">
+              <div class="station-icon" aria-hidden="true">🎨</div>
+              <div>
+                <span class="station-badge">MODULE 02</span>
+                <h3 id="skills-web-title" class="station-title">Frontend &amp; Modern Web</h3>
+              </div>
+            </header>
+            <p class="station-desc">Crafting responsive, high-performance web experiences with semantic architecture and accessibility.</p>
+
+            <div class="skills-meter-list">
+              
+              <!-- SKILL: HTML5 - Accessible semantic document outline, ARIA roles, and SEO -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🌐</span>
+                    <strong>HTML5 (Semantic &amp; A11y)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 92 // 92%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 92%">
+                  <div class="pixel-meter-fill fill-html" style="width: 92%;"></div>
+                </div>
+                <!-- Sub-competencies for HTML5 -->
+                <ul class="skill-subtags" aria-label="HTML5 competencies">
+                  <li class="subtag">Semantic Hierarchy</li>
+                  <li class="subtag">ARIA Standards</li>
+                  <li class="subtag">SEO Metadata</li>
+                  <li class="subtag">Web Forms</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: CSS3 - Responsive design, Flexbox, Grid, custom properties & pixel art styling -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🎭</span>
+                    <strong>Modern CSS3 &amp; Responsive UI</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 90 // 90%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 90%">
+                  <div class="pixel-meter-fill fill-css" style="width: 90%;"></div>
+                </div>
+                <!-- Sub-competencies for CSS3 -->
+                <ul class="skill-subtags" aria-label="CSS3 competencies">
+                  <li class="subtag">Flexbox &amp; Grid</li>
+                  <li class="subtag">Custom Properties</li>
+                  <li class="subtag">Pixel Art Design</li>
+                  <li class="subtag">Dark/Light Themes</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: JAVASCRIPT - Client-side interactivity, DOM manipulation, async APIs -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">📜</span>
+                    <strong>JavaScript (ES6+)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 85 // 85%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 85%">
+                  <div class="pixel-meter-fill fill-js" style="width: 85%;"></div>
+                </div>
+                <!-- Sub-competencies for JavaScript -->
+                <ul class="skill-subtags" aria-label="JavaScript competencies">
+                  <li class="subtag">DOM Manipulation</li>
+                  <li class="subtag">Event Architecture</li>
+                  <li class="subtag">LocalStorage State</li>
+                  <li class="subtag">Async &amp; Promises</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- ========================================================= -->
+          <!-- 3. CORE COMPUTER SCIENCE & PROBLEM SOLVING                -->
+          <!-- SKILL CATEGORY: Algorithmic foundations and system logic  -->
+          <!-- ========================================================= -->
+          <article class="skill-station-card card" data-category="core" aria-labelledby="skills-core-title">
+            <header class="station-header">
+              <div class="station-icon" aria-hidden="true">🧠</div>
+              <div>
+                <span class="station-badge">MODULE 03</span>
+                <h3 id="skills-core-title" class="station-title">Core Computer Science</h3>
+              </div>
+            </header>
+            <p class="station-desc">Foundational algorithmic principles, data structures, and object-oriented software engineering.</p>
+
+            <div class="skills-meter-list">
+              
+              <!-- SKILL: DATA STRUCTURES & ALGORITHMS - Core problem solving and logic -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🧩</span>
+                    <strong>Data Structures &amp; Algorithms</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 88 // 88%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="DSA proficiency 88%">
+                  <div class="pixel-meter-fill fill-dsa" style="width: 88%;"></div>
+                </div>
+                <!-- Sub-competencies for DSA -->
+                <ul class="skill-subtags" aria-label="DSA competencies">
+                  <li class="subtag">Arrays, Lists, Stacks</li>
+                  <li class="subtag">Trees &amp; Hash Maps</li>
+                  <li class="subtag">Searching &amp; Sorting</li>
+                  <li class="subtag">Big-O Complexity</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: OBJECT-ORIENTED DESIGN - Clean architecture, encapsulation, inheritance -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🏗️</span>
+                    <strong>Object-Oriented Design (OOD)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 90 // 90%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="OOD proficiency 90%">
+                  <div class="pixel-meter-fill fill-ood" style="width: 90%;"></div>
+                </div>
+                <!-- Sub-competencies for OOD -->
+                <ul class="skill-subtags" aria-label="OOD competencies">
+                  <li class="subtag">Encapsulation</li>
+                  <li class="subtag">Inheritance</li>
+                  <li class="subtag">Polymorphism</li>
+                  <li class="subtag">Modular Abstraction</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: DATABASE MANAGEMENT (DBMS) - Relational modeling and structured storage -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🗄️</span>
+                    <strong>Database Management (DBMS)</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 84 // 84%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="DBMS proficiency 84%">
+                  <div class="pixel-meter-fill fill-db" style="width: 84%;"></div>
+                </div>
+                <!-- Sub-competencies for DBMS -->
+                <ul class="skill-subtags" aria-label="DBMS competencies">
+                  <li class="subtag">Relational Modeling</li>
+                  <li class="subtag">Schema Architecture</li>
+                  <li class="subtag">Data Integrity</li>
+                  <li class="subtag">SQL Fundamentals</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- ========================================================= -->
+          <!-- 4. DEVELOPER TOOLS & WORKFLOW STATION                     -->
+          <!-- SKILL CATEGORY: Version control, tools & environments     -->
+          <!-- ========================================================= -->
+          <article class="skill-station-card card" data-category="tools" aria-labelledby="skills-tools-title">
+            <header class="station-header">
+              <div class="station-icon" aria-hidden="true">🛠️</div>
+              <div>
+                <span class="station-badge">MODULE 04</span>
+                <h3 id="skills-tools-title" class="station-title">Tools &amp; Workflow</h3>
+              </div>
+            </header>
+            <p class="station-desc">Modern developer environments, version control pipelines, debugging toolkits, and agile practices.</p>
+
+            <div class="skills-meter-list">
+              
+              <!-- SKILL: GIT & GITHUB - Branching strategies, repository management, and collaboration -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🐙</span>
+                    <strong>Git &amp; GitHub Version Control</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 88 // 88%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency 88%">
+                  <div class="pixel-meter-fill fill-git" style="width: 88%;"></div>
+                </div>
+                <!-- Sub-competencies for Git -->
+                <ul class="skill-subtags" aria-label="Git competencies">
+                  <li class="subtag">Repository Management</li>
+                  <li class="subtag">Branching &amp; Merges</li>
+                  <li class="subtag">Commit Protocols</li>
+                  <li class="subtag">Open-Source Flow</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: VS CODE & IDES - Integrated debugging, extensions, and workflow acceleration -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">💻</span>
+                    <strong>VS Code &amp; Development Environments</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 92 // 92%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="IDE proficiency 92%">
+                  <div class="pixel-meter-fill fill-ide" style="width: 92%;"></div>
+                </div>
+                <!-- Sub-competencies for IDEs -->
+                <ul class="skill-subtags" aria-label="IDE competencies">
+                  <li class="subtag">VS Code Configuration</li>
+                  <li class="subtag">Eclipse IDE</li>
+                  <li class="subtag">PowerShell / CLI</li>
+                  <li class="subtag">Developer Tooling</li>
+                </ul>
+              </div>
+
+              <!-- SKILL: DEBUGGING & CODE OPTIMIZATION - Defect isolation, code review, and refactoring -->
+              <div class="skill-meter-item">
+                <div class="skill-meta-row">
+                  <span class="skill-name">
+                    <span class="skill-icon-emoji" aria-hidden="true">🔍</span>
+                    <strong>Debugging &amp; Code Optimization</strong>
+                  </span>
+                  <span class="pixel-lvl-tag">LVL 86 // 86%</span>
+                </div>
+                <div class="pixel-meter-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="Debugging proficiency 86%">
+                  <div class="pixel-meter-fill fill-debug" style="width: 86%;"></div>
+                </div>
+                <!-- Sub-competencies for Debugging -->
+                <ul class="skill-subtags" aria-label="Debugging competencies">
+                  <li class="subtag">Error Isolation</li>
+                  <li class="subtag">Trace Diagnostics</li>
+                  <li class="subtag">Refactoring</li>
+                  <li class="subtag">Code Cleanliness</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Skills Section Retro Summary Banner -->
+        <div class="skills-summary-banner">
+          <div class="banner-status-line">
+            <span class="status-led-blink" aria-hidden="true"></span>
+            <span class="banner-tag">SKILL_TREE STATUS: VERIFIED // TOTAL EXP: 9,999</span>
+          </div>
+          <p class="banner-text">
+            All 12 competencies actively cultivated through academic coursework, independent engineering projects, 
+            and certified programming assessments.
+          </p>
+          <div class="banner-cta">
+            <a href="#projects" class="pixel-btn pixel-btn-primary btn-sm">
+              <span>EXPLORE PROJECTS BUILT WITH THESE SKILLS &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- [END SKILLS SECTION: RETRO PIXEL ART COMPETENCY ARSENAL] -->
+
+
+    <!-- =============================================================== -->
+    <!-- 4. TIMELINE / EXPERIENCE SECTION                                -->
+    <!-- [TIMELINE SECTION: RETRO PIXEL ART MILESTONE TRACKER]          -->
+    <!-- Scroll-reveal cards listing education, projects, certificates,  -->
+    <!-- and career milestones with badge labels, hover effects & tags. -->
+    <!-- =============================================================== -->
+    <section id="timeline" class="timeline-section pixel-timeline-section" aria-labelledby="timeline-title">
+      <div class="section-container">
+
+        <header class="section-header">
+          <!-- Eyebrow text above heading — retro console style -->
+          <p class="section-eyebrow">PLAYER HISTORY // LOG FILE LOADED</p>
+          <h2 id="timeline-title" class="section-title">Career Timeline</h2>
+          <p class="skills-subtitle">Academic achievements, engineering milestones, and earned certifications.</p>
+          <div class="title-underline"></div>
+        </header>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline ordered list — screen reader reads in chronological order -->
+          <ol class="timeline-list" aria-label="Career milestones in chronological order">
+
+            <!-- ====================================================== -->
+            <!-- MILESTONE 1: B.E. Degree — Core academic foundation     -->
+            <!-- BADGE: Education (indigo)  DATE: Graduated              -->
+            <!-- ====================================================== -->
+            <li class="timeline-item">
+              <!-- Pixel square node — acts as a milestone dot on the track line -->
+              <div class="timeline-marker" aria-hidden="true">🎓</div>
+              <article class="timeline-card card" aria-labelledby="tl-edu-title">
+                <header class="timeline-meta">
+                  <!-- Badge identifies this event type as academic education -->
+                  <span class="timeline-badge education">
+                    <span class="badge-icon" aria-hidden="true">🎓</span>
+                    Education
+                  </span>
+                  <!-- Semantic time element with machine-readable datetime -->
+                  <time datetime="2020-09/2024-07" class="timeline-date">2020 – 2024</time>
+                </header>
+                <h3 id="tl-edu-title" class="timeline-title">Bachelor of Engineering (B.E.) — Computer Science</h3>
+                <h4 class="timeline-institution">Adichunchanagiri Institute of Technology, Chickmagalur</h4>
+                <p class="timeline-description">
+                  Completed B.E. with a <strong>7.0 CGPA</strong>, deeply engaging in computer science theory,
+                  software engineering principles, database architecture, operating systems, and object-oriented
+                  design patterns. Built a strong analytical foundation for real-world software development.
+                </p>
+                <!-- Tech tags: subjects and skills developed during this period -->
+                <div class="timeline-tags" aria-label="Subjects and skills developed">
+                  <span class="timeline-tag">Data Structures</span>
+                  <span class="timeline-tag">OOP</span>
+                  <span class="timeline-tag">DBMS</span>
+                  <span class="timeline-tag">OS Fundamentals</span>
+                  <span class="timeline-tag">Software Engineering</span>
+                </div>
+              </article>
+            </li>
+
+            <!-- ====================================================== -->
+            <!-- MILESTONE 2: Secondary Education — School achievement   -->
+            <!-- BADGE: Education (indigo)  DATE: 2020                  -->
+            <!-- ====================================================== -->
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true">📚</div>
+              <article class="timeline-card card" aria-labelledby="tl-school-title">
+                <header class="timeline-meta">
+                  <span class="timeline-badge education">
+                    <span class="badge-icon" aria-hidden="true">📚</span>
+                    Education
+                  </span>
+                  <time datetime="2020" class="timeline-date">2020</time>
+                </header>
+                <h3 id="tl-school-title" class="timeline-title">Higher Secondary (12th) — Science & Mathematics</h3>
+                <h4 class="timeline-institution">Pre-University College, Karnataka Board</h4>
+                <p class="timeline-description">
+                  Completed HSC with a focus on Physics, Chemistry, Mathematics, and Computer Science,
+                  building core analytical thinking, logical reasoning, and an early passion for programming.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag">Physics</span>
+                  <span class="timeline-tag">Mathematics</span>
+                  <span class="timeline-tag">Computer Science</span>
+                </div>
+              </article>
+            </li>
+
+            <!-- ====================================================== -->
+            <!-- MILESTONE 3: Major Project — Inventory & Sales System  -->
+            <!-- BADGE: Project (cyan)  DATE: Academic Track 2023–2024  -->
+            <!-- ====================================================== -->
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true">📦</div>
+              <article class="timeline-card card" aria-labelledby="tl-proj-title">
+                <header class="timeline-meta">
+                  <!-- Cyan project badge identifies this as an engineering project -->
+                  <span class="timeline-badge project">
+                    <span class="badge-icon" aria-hidden="true">⚙️</span>
+                    Major Project
+                  </span>
+                  <time datetime="2023/2024" class="timeline-date">2023 – 2024</time>
+                </header>
+                <h3 id="tl-proj-title" class="timeline-title">Digital Inventory & Sales Management System</h3>
+                <h4 class="timeline-institution">Adichunchanagiri Institute of Technology — Final Year Capstone</h4>
+                <p class="timeline-description">
+                  Architected and delivered a full-featured inventory and sales management system using
+                  Java (OOP), a relational database backend, and file I/O pipelines. Implemented
+                  real-time stock tracking, sales reporting, and user session management. The system
+                  was evaluated and recognized as a top-tier academic engineering project.
+                </p>
+                <!-- Tags: tech stack used in this specific project -->
+                <div class="timeline-tags">
+                  <span class="timeline-tag">Java</span>
+                  <span class="timeline-tag">OOP Architecture</span>
+                  <span class="timeline-tag">DBMS</span>
+                  <span class="timeline-tag">File I/O</span>
+                  <span class="timeline-tag">System Design</span>
+                </div>
+              </article>
+            </li>
+
+            <!-- ====================================================== -->
+            <!-- MILESTONE 4: Python Code Camp Certification             -->
+            <!-- BADGE: Certificate (amber)  DATE: 2023                 -->
+            <!-- ====================================================== -->
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true">🏆</div>
+              <article class="timeline-card card" aria-labelledby="tl-cert-title">
+                <header class="timeline-meta">
+                  <!-- Amber certificate badge for verified achievements -->
+                  <span class="timeline-badge certificate">
+                    <span class="badge-icon" aria-hidden="true">🏆</span>
+                    Certification
+                  </span>
+                  <time datetime="2023" class="timeline-date">2023</time>
+                </header>
+                <h3 id="tl-cert-title" class="timeline-title">Python Code Camp — Verified Certification</h3>
+                <h4 class="timeline-institution">Python Certification Authority</h4>
+                <p class="timeline-description">
+                  Earned a verified Python Code Camp certification validating core Python 3 proficiency:
+                  syntax mastery, functional programming, data structures (lists, dicts, sets), and
+                  script automation. Certified competency applies directly to data pipelines and
+                  scripting workflows.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag">Python 3</span>
+                  <span class="timeline-tag">Functional Programming</span>
+                  <span class="timeline-tag">Data Structures</span>
+                  <span class="timeline-tag">Script Automation</span>
+                </div>
+              </article>
+            </li>
+
+            <!-- ====================================================== -->
+            <!-- MILESTONE 5: Active Development & Skills Cultivation   -->
+            <!-- BADGE: Milestone (green)  DATE: 2024 – Present         -->
+            <!-- ====================================================== -->
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true">🚀</div>
+              <article class="timeline-card card" aria-labelledby="tl-active-title">
+                <header class="timeline-meta">
+                  <!-- Green milestone badge for active career progression -->
+                  <span class="timeline-badge milestone">
+                    <span class="badge-icon" aria-hidden="true">🚀</span>
+                    Active Now
+                  </span>
+                  <time datetime="2024" class="timeline-date">2024 – Present</time>
+                </header>
+                <h3 id="tl-active-title" class="timeline-title">Full-Stack Development & Open Source Exploration</h3>
+                <h4 class="timeline-institution">Self-Directed Engineering & Portfolio Building</h4>
+                <p class="timeline-description">
+                  Actively expanding technical breadth through hands-on web development projects,
+                  contributing to open source, and deepening expertise in system design,
+                  Git-driven workflows, and modern frontend architecture. Building a production-quality
+                  portfolio to demonstrate real-world engineering capabilities.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag">HTML5 / CSS3</span>
+                  <span class="timeline-tag">JavaScript</span>
+                  <span class="timeline-tag">Git / GitHub</span>
+                  <span class="timeline-tag">System Design</span>
+                  <span class="timeline-tag">Open Source</span>
+                </div>
+              </article>
+            </li>
+
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <!-- [END TIMELINE SECTION: RETRO PIXEL ART MILESTONE TRACKER] -->
+
+
+    <!-- =============================================================== -->
+    <!-- 5. PROJECTS SECTION                                             -->
+    <!-- [PROJECTS SECTION: PIXEL ART THUMBNAIL SHOWCASE + MODAL]       -->
+    <!-- THUMBNAIL->DETAIL: each .project-thumb-card has                 -->
+    <!-- data-project="proj-N" which JS reads to open #modal-proj-N.    -->
+    <!-- =============================================================== -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-eyebrow">BUILD LOG // COMMIT HISTORY</p>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="skills-subtitle">Clickable thumbnails &mdash; select any card to view full project details.</p>
+          <div class="title-underline"></div>
+        </header>
+
+        <!-- Category Filter: data-filter matches data-category on each thumbnail card -->
+        <div class="proj-filter-nav" role="tablist" aria-label="Project categories">
+          <button type="button" class="proj-filter-btn active" role="tab" aria-selected="true" data-filter="all">
+            <span class="tab-arrow" aria-hidden="true">&#9658;</span><span>[ALL]</span>
+          </button>
+          <button type="button" class="proj-filter-btn" role="tab" aria-selected="false" data-filter="systems">
+            <span class="tab-arrow" aria-hidden="true">&#9658;</span><span>[SYSTEMS]</span>
+          </button>
+          <button type="button" class="proj-filter-btn" role="tab" aria-selected="false" data-filter="web">
+            <span class="tab-arrow" aria-hidden="true">&#9658;</span><span>[WEB]</span>
+          </button>
+          <button type="button" class="proj-filter-btn" role="tab" aria-selected="false" data-filter="algorithms">
+            <span class="tab-arrow" aria-hidden="true">&#9658;</span><span>[ALGORITHMS]</span>
+          </button>
+          <button type="button" class="proj-filter-btn" role="tab" aria-selected="false" data-filter="tools">
+            <span class="tab-arrow" aria-hidden="true">&#9658;</span><span>[TOOLS]</span>
+          </button>
+        </div>
+
+        <!-- Thumbnail Grid: clicking any card triggers JS openProjectModal(data-project) -->
+        <div class="projects-thumb-grid" id="projects-grid">
+
+          <!-- =====================================================
+               PROJECT 1: Digital Inventory & Sales System
+               CATEGORY: systems | OPENS MODAL: #modal-proj-1
+               data-project="proj-1" on card matches id="modal-proj-1"
+               ===================================================== -->
+          <article class="project-thumb-card" data-category="systems" data-project="proj-1"
+            role="button" tabindex="0" id="thumb-proj-1"
+            aria-label="Open details for Digital Inventory and Sales Management System">
+
+            <!-- Visual thumbnail banner with pixel HUD bars + hover overlay -->
+            <div class="thumb-banner thumb-banner--inventory" aria-hidden="true">
+              <span class="thumb-banner-icon">&#128230;</span>
+              <div class="thumb-hud-bars">
+                <div class="thumb-hud-bar" style="width:88%"></div>
+                <div class="thumb-hud-bar" style="width:72%"></div>
+                <div class="thumb-hud-bar" style="width:95%"></div>
+              </div>
+              <!-- Overlay appears on card :hover, inviting click interaction -->
+              <div class="thumb-overlay"><span class="thumb-overlay-label">&#9658; VIEW DETAILS</span></div>
+            </div>
+
+            <div class="thumb-body">
+              <span class="proj-cat-tag proj-cat-systems">SYSTEMS</span>
+              <h3 class="thumb-title">Digital Inventory &amp; Sales Management System</h3>
+              <p class="thumb-desc">Java-powered retail inventory engine with real-time stock tracking, automated sales logging, and relational DB persistence.</p>
+              <div class="thumb-tech-row">
+                <span class="tech-pill">Java</span><span class="tech-pill">OOP</span>
+                <span class="tech-pill">DBMS</span><span class="tech-pill">File I/O</span>
+              </div>
+            </div>
+
+            <footer class="thumb-footer">
+              <!-- CTA button — clicking the card (or this btn) opens the detail modal via JS -->
+              <button class="thumb-cta-btn" data-project="proj-1" aria-label="View Inventory System details">
+                <span>VIEW DETAILS</span><span aria-hidden="true">&#8594;</span>
+              </button>
+              <!-- GitHub link uses stopPropagation so it doesn't trigger the modal -->
+              <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer"
+                 class="thumb-gh-link" aria-label="View on GitHub" onclick="event.stopPropagation()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.12.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.98.1-.76.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.46-2.38 1.22-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.76.84 1.22 1.92 1.22 3.22 0 4.6-2.8 5.63-5.48 5.92.44.38.82 1.1.82 2.22v3.3c0 .32.22.7.82.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/>
+                </svg>
+              </a>
+            </footer>
+          </article>
+
+
+          <!-- =====================================================
+               PROJECT 2: Responsive Developer Portfolio Platform
+               CATEGORY: web | OPENS MODAL: #modal-proj-2
+               ===================================================== -->
+          <article class="project-thumb-card" data-category="web" data-project="proj-2"
+            role="button" tabindex="0" id="thumb-proj-2"
+            aria-label="Open details for Responsive Developer Portfolio Platform">
+
+            <div class="thumb-banner thumb-banner--portfolio" aria-hidden="true">
+              <span class="thumb-banner-icon">&#127760;</span>
+              <div class="thumb-hud-bars">
+                <div class="thumb-hud-bar" style="width:95%"></div>
+                <div class="thumb-hud-bar" style="width:90%"></div>
+                <div class="thumb-hud-bar" style="width:85%"></div>
+              </div>
+              <div class="thumb-overlay"><span class="thumb-overlay-label">&#9658; VIEW DETAILS</span></div>
+            </div>
+
+            <div class="thumb-body">
+              <span class="proj-cat-tag proj-cat-web">WEB</span>
+              <h3 class="thumb-title">Responsive Developer Portfolio Platform</h3>
+              <p class="thumb-desc">Pixel-art portfolio with dark/light theme toggle, accessible keyboard navigation, retro arcade animations, and terminal chat.</p>
+              <div class="thumb-tech-row">
+                <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JS ES6</span><span class="tech-pill">Dark Mode</span>
+              </div>
+            </div>
+
+            <footer class="thumb-footer">
+              <button class="thumb-cta-btn" data-project="proj-2" aria-label="View Portfolio details">
+                <span>VIEW DETAILS</span><span aria-hidden="true">&#8594;</span>
+              </button>
+              <!-- Live demo link: goes to #hero (top of this page) instead of GitHub -->
+              <a href="#hero" class="thumb-gh-link" aria-label="View live demo" title="Live Demo"
+                 onclick="event.stopPropagation()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </footer>
+          </article>
+
+
+          <!-- =====================================================
+               PROJECT 3: Algorithmic Problem Solving & DSA
+               CATEGORY: algorithms | OPENS MODAL: #modal-proj-3
+               ===================================================== -->
+          <article class="project-thumb-card" data-category="algorithms" data-project="proj-3"
+            role="button" tabindex="0" id="thumb-proj-3"
+            aria-label="Open details for Algorithmic Problem Solving and Data Structures">
+
+            <div class="thumb-banner thumb-banner--algo" aria-hidden="true">
+              <span class="thumb-banner-icon">&#129329;</span>
+              <div class="thumb-hud-bars">
+                <div class="thumb-hud-bar" style="width:80%"></div>
+                <div class="thumb-hud-bar" style="width:92%"></div>
+                <div class="thumb-hud-bar" style="width:76%"></div>
+              </div>
+              <div class="thumb-overlay"><span class="thumb-overlay-label">&#9658; VIEW DETAILS</span></div>
+            </div>
+
+            <div class="thumb-body">
+              <span class="proj-cat-tag proj-cat-algorithms">ALGORITHMS</span>
+              <h3 class="thumb-title">Algorithmic Problem Solving &amp; Data Structures</h3>
+              <p class="thumb-desc">Curated Python and Java DSA solutions covering recursion, dynamic programming, graphs, trees, and sorting challenges.</p>
+              <div class="thumb-tech-row">
+                <span class="tech-pill">Python</span><span class="tech-pill">Java</span>
+                <span class="tech-pill">DSA</span><span class="tech-pill">C</span>
+              </div>
+            </div>
+
+            <footer class="thumb-footer">
+              <button class="thumb-cta-btn" data-project="proj-3" aria-label="View DSA project details">
+                <span>VIEW DETAILS</span><span aria-hidden="true">&#8594;</span>
+              </button>
+              <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer"
+                 class="thumb-gh-link" aria-label="View DSA on GitHub" onclick="event.stopPropagation()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.12.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.98.1-.76.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.46-2.38 1.22-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.76.84 1.22 1.92 1.22 3.22 0 4.6-2.8 5.63-5.48 5.92.44.38.82 1.1.82 2.22v3.3c0 .32.22.7.82.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/>
+                </svg>
+              </a>
+            </footer>
+          </article>
+
+
+          <!-- =====================================================
+               PROJECT 4: Python Script Automation & CLI Tools
+               CATEGORY: tools | OPENS MODAL: #modal-proj-4
+               ===================================================== -->
+          <article class="project-thumb-card" data-category="tools" data-project="proj-4"
+            role="button" tabindex="0" id="thumb-proj-4"
+            aria-label="Open details for Python Script Automation and CLI Tools">
+
+            <div class="thumb-banner thumb-banner--tools" aria-hidden="true">
+              <span class="thumb-banner-icon">&#128295;</span>
+              <div class="thumb-hud-bars">
+                <div class="thumb-hud-bar" style="width:88%"></div>
+                <div class="thumb-hud-bar" style="width:68%"></div>
+                <div class="thumb-hud-bar" style="width:80%"></div>
+              </div>
+              <div class="thumb-overlay"><span class="thumb-overlay-label">&#9658; VIEW DETAILS</span></div>
+            </div>
+
+            <div class="thumb-body">
+              <span class="proj-cat-tag proj-cat-tools">TOOLS</span>
+              <h3 class="thumb-title">Python Script Automation &amp; CLI Utilities</h3>
+              <p class="thumb-desc">Python automation scripts for file processing, batch operations, data parsing, and CLI-driven developer productivity workflows.</p>
+              <div class="thumb-tech-row">
+                <span class="tech-pill">Python 3</span><span class="tech-pill">CLI</span>
+                <span class="tech-pill">Automation</span><span class="tech-pill">OS/FS</span>
+              </div>
+            </div>
+
+            <footer class="thumb-footer">
+              <button class="thumb-cta-btn" data-project="proj-4" aria-label="View Python Tools details">
+                <span>VIEW DETAILS</span><span aria-hidden="true">&#8594;</span>
+              </button>
+              <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer"
+                 class="thumb-gh-link" aria-label="View Python tools on GitHub" onclick="event.stopPropagation()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.12.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.98.1-.76.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.46-2.38 1.22-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.76.84 1.22 1.92 1.22 3.22 0 4.6-2.8 5.63-5.48 5.92.44.38.82 1.1.82 2.22v3.3c0 .32.22.7.82.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/>
+                </svg>
+              </a>
+            </footer>
+          </article>
+
+        </div><!-- [END .projects-thumb-grid] -->
+      </div>
+    </section>
+    <!-- [END PROJECTS SECTION] -->
+
+
+    <!-- ================================================================== -->
+    <!-- PROJECT DETAIL MODALS                                               -->
+    <!-- id="modal-proj-N" matches data-project="proj-N" on thumbnails.     -->
+    <!-- JS: openProjectModal() removes [hidden]; closeProjectModal() adds.  -->
+    <!-- ================================================================== -->
+
+    <!-- Modal 1: linked to #thumb-proj-1 via data-project="proj-1" -->
+    <div id="modal-proj-1" class="proj-modal-backdrop" role="dialog" aria-modal="true"
+         aria-labelledby="modal-1-title" aria-describedby="modal-1-desc" hidden>
+      <div class="proj-modal-panel">
+        <div class="modal-header modal-header--inventory">
+          <div class="modal-header-meta">
+            <span class="modal-emoji" aria-hidden="true">&#128230;</span>
+            <div>
+              <span class="proj-cat-tag proj-cat-systems">SYSTEMS &bull; CAPSTONE</span>
+              <h2 id="modal-1-title" class="modal-title">Digital Inventory &amp; Sales Management System</h2>
+            </div>
+          </div>
+          <button class="modal-close-btn" aria-label="Close" data-close-modal>&#10005;</button>
+        </div>
+        <div class="modal-body" id="modal-1-desc">
+          <p class="modal-overview">A full-featured inventory and sales management system built with Java OOP architecture as the final year capstone project at AIT. Manages real-time stock levels, automates sales logging, generates low-stock alerts, and organizes structured data records with robust validation.</p>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#9889; KEY FEATURES</h3>
+            <ul class="modal-feature-list">
+              <li>Real-time stock balance tracking across multiple product categories</li>
+              <li>Automated sales logging with date-stamped transaction records</li>
+              <li>Low-stock alert system with threshold-based replenishment flags</li>
+              <li>Structured data persistence via File I/O and relational DB</li>
+              <li>Input validation, error handling, and clean session management</li>
+            </ul>
+          </div>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#128296; TECH STACK</h3>
+            <div class="modal-tech-row">
+              <span class="tech-pill">Java (Core + OOP)</span><span class="tech-pill">Python</span>
+              <span class="tech-pill">DBMS / SQL</span><span class="tech-pill">File I/O</span>
+              <span class="tech-pill">Collections Framework</span><span class="tech-pill">System Design</span>
+            </div>
+          </div>
+          <div class="modal-stats-row">
+            <div class="modal-stat"><span class="modal-stat-value">7.0</span><span class="modal-stat-label">CGPA Degree</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">FY</span><span class="modal-stat-label">Final Year Capstone</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">AIT</span><span class="modal-stat-label">Institution</span></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub &#8594;</a>
+          <button class="btn btn-outline" data-close-modal>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: linked to #thumb-proj-2 via data-project="proj-2" -->
+    <div id="modal-proj-2" class="proj-modal-backdrop" role="dialog" aria-modal="true"
+         aria-labelledby="modal-2-title" aria-describedby="modal-2-desc" hidden>
+      <div class="proj-modal-panel">
+        <div class="modal-header modal-header--portfolio">
+          <div class="modal-header-meta">
+            <span class="modal-emoji" aria-hidden="true">&#127760;</span>
+            <div>
+              <span class="proj-cat-tag proj-cat-web">WEB &bull; LIVE</span>
+              <h2 id="modal-2-title" class="modal-title">Responsive Developer Portfolio Platform</h2>
+            </div>
+          </div>
+          <button class="modal-close-btn" aria-label="Close" data-close-modal>&#10005;</button>
+        </div>
+        <div class="modal-body" id="modal-2-desc">
+          <p class="modal-overview">A production-quality portfolio built with semantic HTML5, Vanilla CSS, and ES6 JavaScript. Features pixel-art arcade aesthetic, CRT scanlines, persistent dark/light theme, full keyboard accessibility, and a terminal chat assistant.</p>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#9889; KEY FEATURES</h3>
+            <ul class="modal-feature-list">
+              <li>Pixel-art retro design with CRT scanlines and stepped CSS animations</li>
+              <li>Dark/Light theme toggle with media query detection and localStorage</li>
+              <li>Accessible ARIA roles, skip links, and full keyboard navigation</li>
+              <li>Vertical slide-out nav with active section scroll-spy</li>
+              <li>IntersectionObserver scroll-reveal and skill bar animation</li>
+              <li>Terminal-style chat bot with knowledge base responses</li>
+            </ul>
+          </div>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#128296; TECH STACK</h3>
+            <div class="modal-tech-row">
+              <span class="tech-pill">Semantic HTML5</span><span class="tech-pill">Vanilla CSS</span>
+              <span class="tech-pill">JavaScript ES6</span><span class="tech-pill">CSS Variables</span>
+              <span class="tech-pill">IntersectionObserver</span><span class="tech-pill">localStorage</span>
+            </div>
+          </div>
+          <div class="modal-stats-row">
+            <div class="modal-stat"><span class="modal-stat-value">100%</span><span class="modal-stat-label">Vanilla Stack</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">A11y</span><span class="modal-stat-label">Accessible</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">Live</span><span class="modal-stat-label">This Page</span></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#hero" class="btn btn-primary">View Live Demo &#8594;</a>
+          <button class="btn btn-outline" data-close-modal>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: linked to #thumb-proj-3 via data-project="proj-3" -->
+    <div id="modal-proj-3" class="proj-modal-backdrop" role="dialog" aria-modal="true"
+         aria-labelledby="modal-3-title" aria-describedby="modal-3-desc" hidden>
+      <div class="proj-modal-panel">
+        <div class="modal-header modal-header--algo">
+          <div class="modal-header-meta">
+            <span class="modal-emoji" aria-hidden="true">&#129329;</span>
+            <div>
+              <span class="proj-cat-tag proj-cat-algorithms">ALGORITHMS &bull; DSA</span>
+              <h2 id="modal-3-title" class="modal-title">Algorithmic Problem Solving &amp; Data Structures</h2>
+            </div>
+          </div>
+          <button class="modal-close-btn" aria-label="Close" data-close-modal>&#10005;</button>
+        </div>
+        <div class="modal-body" id="modal-3-desc">
+          <p class="modal-overview">Curated Python and Java solutions for classical algorithm and data structure challenges. Covers arrays, linked lists, trees, graphs, dynamic programming, sorting, and searching — with clean modular code and comprehensive test coverage.</p>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#9889; COVERAGE AREAS</h3>
+            <ul class="modal-feature-list">
+              <li>Sorting: QuickSort, MergeSort, HeapSort with Big-O analysis</li>
+              <li>Searching: Binary search, BFS, DFS on tree and graph structures</li>
+              <li>Dynamic programming: Fibonacci, Knapsack, LCS, coin change</li>
+              <li>Data structures: Stacks, queues, linked lists, BSTs, hash maps</li>
+              <li>Graph algorithms: Dijkstra, Prim MST, Kruskal</li>
+            </ul>
+          </div>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#128296; TECH STACK</h3>
+            <div class="modal-tech-row">
+              <span class="tech-pill">Python 3</span><span class="tech-pill">Java</span>
+              <span class="tech-pill">C Programming</span><span class="tech-pill">Data Structures</span><span class="tech-pill">Algorithms</span>
+            </div>
+          </div>
+          <div class="modal-stats-row">
+            <div class="modal-stat"><span class="modal-stat-value">3</span><span class="modal-stat-label">Languages</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">O(n)</span><span class="modal-stat-label">Complexity Focus</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">DSA</span><span class="modal-stat-label">Core Subject</span></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub &#8594;</a>
+          <button class="btn btn-outline" data-close-modal>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: linked to #thumb-proj-4 via data-project="proj-4" -->
+    <div id="modal-proj-4" class="proj-modal-backdrop" role="dialog" aria-modal="true"
+         aria-labelledby="modal-4-title" aria-describedby="modal-4-desc" hidden>
+      <div class="proj-modal-panel">
+        <div class="modal-header modal-header--tools">
+          <div class="modal-header-meta">
+            <span class="modal-emoji" aria-hidden="true">&#128295;</span>
+            <div>
+              <span class="proj-cat-tag proj-cat-tools">TOOLS &bull; PYTHON</span>
+              <h2 id="modal-4-title" class="modal-title">Python Script Automation &amp; CLI Utilities</h2>
+            </div>
+          </div>
+          <button class="modal-close-btn" aria-label="Close" data-close-modal>&#10005;</button>
+        </div>
+        <div class="modal-body" id="modal-4-desc">
+          <p class="modal-overview">Production-ready Python scripts and CLI tools for developer productivity — batch file processing, data parsing, directory automation, and report generation. Built alongside the Python Code Camp certification program.</p>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#9889; KEY TOOLS</h3>
+            <ul class="modal-feature-list">
+              <li>Batch file renaming and archiving with regex pattern matching</li>
+              <li>CSV/JSON parser with filtering, transformation, and export</li>
+              <li>CLI argument parser using argparse for configurable workflows</li>
+              <li>Automated directory tree generator and snapshot diff tool</li>
+              <li>HTTP request client for API testing via urllib</li>
+            </ul>
+          </div>
+          <div class="modal-feature-block">
+            <h3 class="modal-section-label">&#128296; TECH STACK</h3>
+            <div class="modal-tech-row">
+              <span class="tech-pill">Python 3</span><span class="tech-pill">argparse</span>
+              <span class="tech-pill">os / pathlib</span><span class="tech-pill">json / csv</span>
+              <span class="tech-pill">urllib</span><span class="tech-pill">re (Regex)</span>
+            </div>
+          </div>
+          <div class="modal-stats-row">
+            <div class="modal-stat"><span class="modal-stat-value">&#10003;</span><span class="modal-stat-label">Certified</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">CLI</span><span class="modal-stat-label">Interface</span></div>
+            <div class="modal-stat"><span class="modal-stat-value">Py3</span><span class="modal-stat-label">Runtime</span></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub &#8594;</a>
+          <button class="btn btn-outline" data-close-modal>Close</button>
+        </div>
+      </div>
+    </div>
+    <!-- [END PROJECT DETAIL MODALS] -->
+
+
+    <!-- =============================================================== -->
+    <!-- 6. TESTIMONIALS SECTION                                         -->
+    <!-- [PLACEHOLDER: TESTIMONIALS SECTION - RETRO QUEST ENDORSEMENTS]  -->
+    <!-- Endorsements, peer recommendations, and academic citations.     -->
+    <!-- =============================================================== -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <p class="section-eyebrow">Reputation &amp; Feedback</p>
+          <h2 id="testimonials-title" class="section-title">Testimonials</h2>
+          <div class="title-underline"></div>
+        </header>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card card">
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Huzaif brought remarkable dedication to our software engineering modules. His architectural discipline in Java and clean database design ensured outstanding project results."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-badge-pixel">🎓</div>
+              <div>
+                <cite class="author-name">Academic Project Guide</cite>
+                <span class="author-role">Adichunchanagiri Institute of Technology</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card card">
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "An exceptional team collaborator who thinks in algorithms and structured logic. Huzaif is always the first to debug complex errors and produce clean, readable Python code."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-badge-pixel">💻</div>
+              <div>
+                <cite class="author-name">Engineering Peer</cite>
+                <span class="author-role">Software Engineering Lab</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card card">
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span><span class="star-gold">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Demonstrated high scores and rapid comprehension during the Python Code Camp. A proactive learner with strong foundations ready for production software teams."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-badge-pixel">🏆</div>
+              <div>
+                <cite class="author-name">Python Camp Instructor</cite>
+                <span class="author-role">Code Assessment Evaluator</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- [END PLACEHOLDER: TESTIMONIALS SECTION] -->
+
+
+    <!-- =============================================================== -->
+    <!-- 7. CHAT SECTION                                                 -->
+    <!-- [PLACEHOLDER: CHAT SECTION - RETRO TERMINAL ASSISTANT]          -->
+    <!-- Interactive CRT terminal messenger for fast questions & answers -->
+    <!-- =============================================================== -->
+    <section id="chat" class="chat-section" aria-labelledby="chat-title">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <p class="section-eyebrow">Interactive Messenger</p>
+          <h2 id="chat-title" class="section-title">Terminal Chat Assistant</h2>
+          <div class="title-underline"></div>
+        </header>
+
+        <div class="chat-terminal card" role="region" aria-label="Interactive Terminal Bot">
+          
+          <!-- Terminal Title Bar -->
+          <div class="terminal-header-bar">
+            <div class="terminal-controls" aria-hidden="true">
+              <span class="ctrl-dot dot-red"></span>
+              <span class="ctrl-dot dot-yellow"></span>
+              <span class="ctrl-dot dot-green"></span>
+            </div>
+            <div class="terminal-title-text">TERMINAL // HUZAIF_BOT_DEMO.EXE</div>
+            <span class="terminal-status-pill">STATUS: LOCAL DEMO</span>
+          </div>
+
+          <!-- Quick Suggestion Prompts -->
+          <div class="terminal-hints-bar">
+            <span class="hints-label">QUICK PROMPTS:</span>
+            <div class="hint-buttons">
+              <button type="button" class="btn-hint" data-query="Who is Mohammed Huzaif?">Who is Huzaif?</button>
+              <button type="button" class="btn-hint" data-query="What programming languages do you know?">Tech Skills?</button>
+              <button type="button" class="btn-hint" data-query="Tell me about your Inventory project.">Inventory System?</button>
+              <button type="button" class="btn-hint" data-query="How can I hire or contact you?">Hire Huzaif?</button>
+            </div>
+          </div>
+
+          <!-- Chat Messages Log -->
+          <div id="chat-messages" class="terminal-body" role="log" aria-live="polite">
+            <div class="chat-row bot-row">
+              <span class="chat-avatar-tag">[HUZAIF_BOT]:</span>
+              <div class="chat-bubble">
+                Welcome to my interactive portfolio terminal! Ask me anything about Mohammed Huzaif's engineering background, projects, Java/Python skills, or how to get in touch.
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <form id="terminal-chat-form" class="terminal-input-bar">
+            <span class="terminal-chevron" aria-hidden="true">&gt;</span>
+            <label for="terminal-chat-input" class="sr-only">Type a message for Huzaif's chat assistant</label>
+            <input type="text" id="terminal-chat-input" class="terminal-text-input" placeholder="Type a message or click a quick prompt above..." autocomplete="off">
+            <button type="submit" class="terminal-submit-btn">
+              <span>TRANSMIT</span>
+              <span aria-hidden="true">↵</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- [END PLACEHOLDER: CHAT SECTION] -->
+
+
+    <!-- =============================================================== -->
+    <!-- 8. CONTACT SECTION                                              -->
+    <!-- [PLACEHOLDER: CONTACT SECTION]                                  -->
+    <!-- Direct contact channels (Email, Phone, GitHub, LinkedIn) and    -->
+    <!-- an accessible interactive contact inquiry form.                  -->
+    <!-- =============================================================== -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="section-container">
+        
+        <header class="section-header">
+          <p class="section-eyebrow">Connect &amp; Collaborate</p>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </header>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Info -->
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Let's Discuss Opportunities</h3>
+            <p class="contact-lead">
+              I am currently open to software engineering positions, internships, and technical collaboration. 
+              Feel free to reach out via email, phone, or LinkedIn.
+            </p>
+
+            <address class="contact-cards-container">
+              
+              <!-- Email Card -->
+              <a href="mailto:mohammedhuzaif589@gmail.com" class="contact-item card">
+                <div class="contact-icon-wrapper">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">mohammedhuzaif589@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:6363111822" class="contact-item card">
+                <div class="contact-icon-wrapper">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">+91 6363111822</div>
+                </div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://linkedin.com/in/mohammed-huzaif-216ba8370" target="_blank" rel="noopener noreferrer" class="contact-item card">
+                <div class="contact-icon-wrapper">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">mohammed-huzaif-216ba8370</div>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer" class="contact-item card">
+                <div class="contact-icon-wrapper">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">github.com/huzaiiiiifff</div>
+                </div>
+              </a>
+
+            </address>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="card contact-form-card">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Rivera" required autocomplete="name">
+                <span class="field-error-msg" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                <span class="field-error-msg" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Hello Mohammed, I'd like to talk about..." required></textarea>
+                <span class="field-error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" id="submit-contact-btn" class="btn btn-primary btn-block contact-submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- [END PLACEHOLDER: CONTACT SECTION] -->
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER                                                            -->
+  <!-- [PLACEHOLDER: FOOTER SECTION]                                     -->
+  <!-- Site copyright, credits, quick jump-to-top, and social media      -->
+  <!-- profile links.                                                    -->
+  <!-- ================================================================= -->
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Mohammed Huzaif Portfolio Home">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Huzaif</span>
+            <span class="logo-slash">/</span>
+            <span class="logo-bracket">&gt;</span>
+          </a>
+          <p class="footer-tagline">Building clean, scalable, and resilient software.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#chat">Chat</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-socials" aria-label="Social media and email">
+          <a href="https://github.com/huzaiiiiifff" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/mohammed-huzaif-216ba8370" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:mohammedhuzaif589@gmail.com" class="social-circle" aria-label="Send Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Mohammed Huzaif. All rights reserved. Crafted with semantic HTML5 &amp; CSS3.</p>
+        <a href="#hero" class="back-to-top" aria-label="Scroll back to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- [END PLACEHOLDER: FOOTER SECTION] -->
+
+  </div>
+  <!-- [END .site-layout] -->
+
+  <!-- JavaScript for Theme Toggle, Navigation, and Interactions -->
+  <script src="script.js"></script>
+</body>
+</html>
